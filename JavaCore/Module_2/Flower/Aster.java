@@ -1,0 +1,3 @@
+class Aster extends Flower{
+
+}
