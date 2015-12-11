@@ -1,4 +1,0 @@
-
-class AudioFile extends File{
-
-}
