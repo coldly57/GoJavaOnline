@@ -1,11 +1,25 @@
-public class Directory{
-    private TextFile textFile;
-    private AudioFile audioFile;
-    private ImageFile imageFile;
-    
-    public Directory(TextFile textFile, AudioFile audioFile, ImageFile imageFile){
-        this.textFile = textFile;
-        this.audioFile = audioFile;
-        this.imageFile = imageFile;
+package module2.task1file;
+
+import java.util.ArrayList;
+
+public class Directory {
+
+    private ArrayList<File> filesList = new ArrayList<>();
+
+    public Directory(File... files){
+
+        for (File f : files) {
+            this.filesList.add(f);
+        }
+    }
+
+    public ArrayList<File> getFilesList() {
+        return this.filesList;
+    }
+
+    public void setFilesInDir(File... files){
+        for (File f : files) {
+            this.filesList.add(f);
+        }
     }
 }
