@@ -1,11 +1,25 @@
-public class Bouquet{
-    private Rose rose;
-    private Chamomile chamomile;
-    private Aster aster;
+package module2.task2flower;
 
-    public Bouquet(Rose rose, Chamomile chamomile, Aster aster){
-        this.rose = rose;
-        this.chamomile = chamomile;
-        this.aster = aster;
+import java.util.ArrayList;
+
+public class Bouquet {
+
+    private ArrayList<Flower> flowersList = new ArrayList<>();
+
+    public Bouquet(Flower... flowers){
+
+        for (Flower f : flowers) {
+            this.flowersList.add(f);
+        }
+    }
+
+    public ArrayList<Flower> getFlowersList() {
+        return this.flowersList;
+    }
+
+    public void setFlowersInBouquet(Flower... files){
+        for (Flower f : files) {
+            this.flowersList.add(f);
+        }
     }
 }
