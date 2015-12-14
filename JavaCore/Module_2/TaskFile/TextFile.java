@@ -1,3 +1,11 @@
-public class TextFile extends File{
+package module2.task1file;
 
+public class TextFile extends File {
+
+    private String currentString = "TextFile";
+
+    @Override
+    public String getCurrentString(){
+        return this.currentString;
+    }
 }
