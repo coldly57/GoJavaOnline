@@ -1,11 +1,25 @@
-public class MusicShop{
-    private Guitar guitar;
-    private Piano piano;
-    private Trumpet trumpet;
+package module2.task3musicalinstrument;
 
-    public MusicShop(Guitar guitar, Piano piano, Trumpet trumpet){
-        this.guitar = guitar;
-        this.piano = piano;
-        this.trumpet = trumpet;
+import java.util.ArrayList;
+
+public class MusicShop {
+
+    private ArrayList<MusicalInstrument> instrumentsList = new ArrayList<>();
+
+    public MusicShop(MusicalInstrument... instruments){
+
+        for (MusicalInstrument m : instruments) {
+            this.instrumentsList.add(m);
+        }
+    }
+
+    public ArrayList<MusicalInstrument> getInstrumentsList() {
+        return this.instrumentsList;
+    }
+
+    public void setInstrumentsInShop(MusicalInstrument... instruments){
+        for (MusicalInstrument m : instruments) {
+            this.instrumentsList.add(m);
+        }
     }
 }
