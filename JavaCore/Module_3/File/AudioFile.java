@@ -8,4 +8,5 @@ public class AudioFile extends File {
     public String getCurrentString(){
         return this.currentString;
     }
+
 }
