@@ -30,7 +30,16 @@ public class Rosebush extends Rose {
     }
 
     @Override
-    public String getCurrentString(){
-        return this.currentString + ": " + rosesList.size() + " roses";
+    public String getCurrentString() {
+
+        if (rosesList.size() > 1) {
+            return this.currentString + ": " + rosesList.size() + " roses";
+        }
+
+        if (rosesList.size() == 1) {
+            return this.currentString + ": " + rosesList.size() + " rose";
+        }
+
+        return this.currentString;
     }
 }
