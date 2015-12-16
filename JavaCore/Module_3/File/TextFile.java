@@ -1,5 +1,6 @@
 package module3.task1file;
 
+
 public class TextFile extends File {
 
     private String currentString = "TextFile";
@@ -8,4 +9,5 @@ public class TextFile extends File {
     public String getCurrentString(){
         return this.currentString;
     }
+
 }
