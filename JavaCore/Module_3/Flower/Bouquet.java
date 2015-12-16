@@ -17,9 +17,21 @@ public class Bouquet {
         return this.flowersList;
     }
 
-    public void setFlowersInBouquet(Flower... files){
-        for (Flower f : files) {
+    public void setFlowersInBouquet(Flower... flowers){
+        for (Flower f : flowers) {
             this.flowersList.add(f);
         }
     }
+
+    public static void main(String[] args) {
+
+        Bouquet bouquet = new Bouquet(new Rose(), new Chamomile(), new Aster());
+
+        bouquet.setFlowersInBouquet(new Tulip(), new Rosebush(5));
+
+        for (Flower f : bouquet.getFlowersList()){
+            System.out.println(f.getCurrentString());
+        }
+    }
+
 }
